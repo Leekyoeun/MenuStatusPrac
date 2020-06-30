@@ -41,7 +41,14 @@
             this.추가ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.새로만들기ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.배고픔ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.배고파ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.보통ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.배불러ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -52,7 +59,8 @@
             this.보기ToolStripMenuItem,
             this.프로젝트ToolStripMenuItem,
             this.빌드ToolStripMenuItem,
-            this.서식ToolStripMenuItem});
+            this.서식ToolStripMenuItem,
+            this.배고픔ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(579, 24);
@@ -136,11 +144,57 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripProgressBar1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 388);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(579, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(43, 17);
+            this.toolStripStatusLabel1.Text = "준비중";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar1.Value = 80;
+            // 
+            // 배고픔ToolStripMenuItem
+            // 
+            this.배고픔ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.배고파ToolStripMenuItem,
+            this.보통ToolStripMenuItem,
+            this.배불러ToolStripMenuItem});
+            this.배고픔ToolStripMenuItem.Name = "배고픔ToolStripMenuItem";
+            this.배고픔ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.배고픔ToolStripMenuItem.Text = "배고픔";
+            // 
+            // 배고파ToolStripMenuItem
+            // 
+            this.배고파ToolStripMenuItem.Name = "배고파ToolStripMenuItem";
+            this.배고파ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.배고파ToolStripMenuItem.Text = "배고파";
+            this.배고파ToolStripMenuItem.Click += new System.EventHandler(this.배고파ToolStripMenuItem_Click);
+            // 
+            // 보통ToolStripMenuItem
+            // 
+            this.보통ToolStripMenuItem.Name = "보통ToolStripMenuItem";
+            this.보통ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.보통ToolStripMenuItem.Text = "보통";
+            this.보통ToolStripMenuItem.Click += new System.EventHandler(this.보통ToolStripMenuItem_Click);
+            // 
+            // 배불러ToolStripMenuItem
+            // 
+            this.배불러ToolStripMenuItem.Name = "배불러ToolStripMenuItem";
+            this.배불러ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.배불러ToolStripMenuItem.Text = "배불러";
+            this.배불러ToolStripMenuItem.Click += new System.EventHandler(this.배불러ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -154,6 +208,8 @@
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +230,12 @@
         private System.Windows.Forms.ToolStripMenuItem 추가ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 새로만들기ToolStripMenuItem1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 배고픔ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 배고파ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 보통ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 배불러ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
     }
 }
 

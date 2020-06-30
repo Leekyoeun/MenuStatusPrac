@@ -26,5 +26,23 @@ namespace MenuStatusPrac
         {
             Application.Exit();
         }
+
+        private void 배고파ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "배고파요 ㅠㅠㅠ";
+            toolStripProgressBar1.Value = 10;
+        }
+
+        private void 보통ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "보통";
+            toolStripProgressBar1.Value = 60;
+        }
+
+        private void 배불러ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "배불러";
+            toolStripProgressBar1.Value = 100;
+        }
     }
 }
